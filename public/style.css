@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+p {
+  margin: 0;
+}
+
+.empty {
+  color: red;
+}
+
+.arrow-down,
+.arrow-up {
+  border: none;
+  right: 0;
+}
+
+.arrow-down {
+  position: absolute;
+  top: 0;
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 10px;
+}
+
+.arrow-down:hover,
+.arrow-up:hover {
+  fill: #0d6efd;
+}
+
+@media screen and (max-width: 767px) {
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  input {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .btns {
+    flex-wrap: wrap;
+  }
+}
