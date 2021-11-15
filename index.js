@@ -19,10 +19,10 @@ app.set('trust proxy', 1);
 //Set static folder
 app.use(express.static('public'));
 
-//Routes
-app.use('/api', require('./routes'));
-
 //Enable cors
 app.use(cors('*'));
+
+//Routes
+app.use('/api', require('./routes'));
 
 app.listen(PORT, () => console.log(`Server is runnung on port ${PORT}`));
